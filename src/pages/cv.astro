@@ -4,89 +4,116 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
+
+  <!-- Profile -->
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Profile</div>
   </div>
-
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Allan (Yaoyu) Zhang is a Ph.D. student at the University of Toronto, researching deep learning, time series classification, and feature learning. He has hands-on experience applying AI to real-world challenges including emergency response, healthcare, and smart manufacturing.
   </div>
 
+  <!-- Education -->
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
   </div>
-
   <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
+    <TimeLineElement title="Ph.D. in Mechanical and Industrial Engineering" subtitle="Jan 2023 – Present, University of Toronto, Canada">
+      Research: Deep learning, time series classification, feature learning<br/>
+      Supervisor: Prof. Chi-Guhn Lee
+    </TimeLineElement>
+    <TimeLineElement title="M.Sc. in Mathematics and Statistics (Stochastic Processes)" subtitle="Mar 2021 – Dec 2022, University of Melbourne, Australia">
+      With Distinction
+    </TimeLineElement>
+    <TimeLineElement title="B.Math in Actuarial Science and Statistics" subtitle="Sep 2017 – Oct 2020, University of Waterloo, Canada">
+      With Distinction
+    </TimeLineElement>
   </div>
 
+  <!-- Research Experience -->
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+    <div class="text-3xl w-full font-bold">Research Experience</div>
   </div>
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement title="Research Collaborator at NRC Canada" subtitle="Jan 2023 – Aug 2024, Ottawa, Canada">
+      - Developed TSC algorithms for fire safety data using hybrid, distance-based, and deep learning models.<br/>
+      - Applied contrastive learning and adversarial-based latent construction.<br/>
+      - Created novel algorithms to classify burning materials in fire scenes.
+    </TimeLineElement>
 
-  <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    <TimeLineElement title="Research Collaborator at LG Electronics" subtitle="Jun 2023 – Apr 2024, Toronto, Canada">
+      - Built SOTA TSC models for fabric type recognition in washing machines.<br/>
+      - Developed domain generalization techniques to address distributional shift.
     </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+    <TimeLineElement title="Research Collaborator at Baker Heart & Diabetes Institute" subtitle="Mar 2021 – Oct 2022, Melbourne, Australia">
+      - Applied statistical models and transfer learning to chronic disease prediction.<br/>
+      - Developed logistic regression and clustering for personalized risk assessment.
     </TimeLineElement>
   </div>
 
+  <!-- Internships -->
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
+    <div class="text-3xl w-full font-bold">Internships</div>
+  </div>
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement title="Data Analyst at ByteDance" subtitle="Oct 2021 – Dec 2021, Shanghai, China">
+      - Analyzed sales growth data for Dali smart learning lamps using SQL, Excel, and Aeolus platform.<br/>
+      - Applied A/B testing, KNN, and SVM for marketing and user segmentation.
+    </TimeLineElement>
   </div>
 
+  <!-- Publications -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Publications</div>
+  </div>
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      Tian, S., Zhang, Y., Feng, Y., et al. (2023). <i>Time series classification, augmentation and AI-enabled software for emergency response in freight transportation fires</i>. <b>Expert Systems with Applications</b>, 233, 120914. 
+      [<a href="https://doi.org/10.1016/j.eswa.2023.120914" target="_blank">DOI</a>]
     </li>
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      Liu, D., Shangguan, X., Wei, K., Wu, C., Zhao, X., Sun, Q., Zhang, Y., & Bai, R. (2023). <i>Research on the standardization strategy of granular computing</i>. <b>International Journal of Cognitive Computing in Engineering</b>, 4, 340–348.
+      [<a href="https://doi.org/10.1016/j.ijcce.2023.09.004" target="_blank">DOI</a>]
     </li>
   </ul>
 
+  <!-- Grants & Awards -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Grants & Awards</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>Mathematics and Statistics Masters Scholarship – University of Melbourne (2021, 2022)</li>
+    <li>Science Graduate Scholarship – University of Melbourne (2021)</li>
+    <li>Melbourne Research Scholarships – University of Melbourne (2021)</li>
+    <li>President’s Scholarship – University of Waterloo (2018)</li>
+  </ul>
+
+  <!-- Skills -->
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+  <ul class="list-disc md:columns-3 columns-1 mx-6 mb-10">
+    <li>Python</li>
+    <li>R</li>
+    <li>SLURM</li>
+    <li>PyTorch</li>
+    <li>TensorFlow</li>
+    <li>SQL</li>
+    <li>Machine Learning</li>
+    <li>Deep Learning</li>
+    <li>Time Series Analysis</li>
+    <li>Feature Learning</li>
+    <li>LaTeX</li>
+    <li>Git</li>
   </ul>
+
+  <!-- Associations -->
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Professional Associations</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>Society of Actuaries: Passed Exams P, FM, IFM, SRM, STAM, VEE (Math Stats, Economics, Finance)</li>
+  </ul>
+
 </BaseLayout>

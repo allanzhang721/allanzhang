@@ -3,49 +3,51 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">AI Research Projects</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="AI for Fire Safety Classification"
+    img="/fire.png"
+    desc="Developed time series classification models for identifying burning materials during fire incidents. Implemented domain-agnostic contrastive learning and adversarial latent space modeling using CNNs for generalization under distributional shift."
     url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    badge="Research"
   />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="TSC for Smart Appliances – LG Electronics"
+    img="/wash.png"
+    desc="Built deep learning models to classify fabric types using washing machine sensor data. Applied domain generalization techniques to address distributional shifts and improve robustness."
+    url="#"
+    badge="Industry"
+  />
+
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Disease Prediction with Lipidomics"
+    img="/diabete.png"
+    desc="Collaborated with the Baker Heart & Diabetes Institute to model chronic diseases such as diabetes and CKD. Used XGBoost, neural networks, and transfer learning based on the Oracle Algorithm."
+    url="#"
+    badge="Healthcare"
+  />
+
+  <div class="divider my-0"></div>
+
+
+  <div class="mt-10">
+    <div class="text-3xl w-full font-bold mb-5">Other Work</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Standardization Strategy of Granular Computing"
+    img="/compute.png"
+    desc="Co-authored a study on granular computing published in the International Journal of Cognitive Computing in Engineering. Investigated formalization strategies for computation and reasoning with information granules."
     url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    badge="Publication"
   />
 </BaseLayout>
