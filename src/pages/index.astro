@@ -11,12 +11,12 @@ const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <!-- Hero Section with Background Image + Overlay (same size as content) -->
-  <div class="relative bg-cover bg-center bg-no-repeat" style="background-image: url('/image.png')">
+  <!-- Hero Section with Rounded Background -->
+  <div class="relative bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden" style="background-image: url('/image.png')">
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-white/30"></div>
+    <div class="absolute inset-0 bg-black/40"></div>
 
-    <!-- Foreground Content -->
+    <!-- Foreground content -->
     <div class="relative z-10 bg-white/80 backdrop-blur-sm p-8 rounded-xl max-w-5xl mx-auto">
       <div class="text-xl py-1">Hey there 👋</div>
       <div class="text-5xl font-bold">I'm Yaoyu (Allan) Zhang</div>
