@@ -2,19 +2,25 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
+import createSlug from "../lib/createSlug";
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Yaoyu (Allan) Zhang</div>
-    <div class="text-3xl py-3 font-bold">PhD Student & ML Engineer</div>
-    <div class="py-2">
+  <!-- Hero Section with Background Image -->
+  <div
+    class="bg-cover bg-center bg-no-repeat min-h-[500px] flex items-center"
+    style="background-image: url('/image.png')"
+  >
+    <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl max-w-5xl mx-auto">
+      <div class="text-xl py-1">Hey there 👋</div>
+      <div class="text-5xl font-bold">I'm Yaoyu (Allan) Zhang</div>
+      <div class="text-3xl py-3 font-bold">PhD Student & ML Engineer</div>
+      <div class="py-2">
         <text class="text-lg">
           I am a third-year Ph.D. student in the Department of Mechanical and Industrial Engineering at the University of Toronto. 
           My research focuses on robust time series analysis and classification under distributional shift, with a particular emphasis 
@@ -23,14 +29,12 @@ const last_posts = posts.slice(0, 3);
           <br /><br />
           Outside of research, I love playing badminton 🏸 — it's my favorite way to relax and stay active.
         </text>
-    </div>
-    <div class="mt-8">
-
-      </a>
+      </div>
     </div>
   </div>
 
-  <div>
+  <!-- Current Projects Section -->
+  <div class="mt-12">
     <div class="text-3xl w-full font-bold mb-2">Current Projects</div>
   </div>
 
@@ -41,7 +45,7 @@ const last_posts = posts.slice(0, 3);
     url="#"
     badge="Research"
   />
-  
+
   <div class="divider my-0"></div>
 
   <HorizontalCard
